@@ -24,9 +24,8 @@ const SajelComponent = () => {
         <h2 className="text-blue-600 text-xl md:text-2xl font-bold ml-2 md:ml-7 mb-4">If you have a DAR click here</h2>
         <button 
           className="bg-red-500 ml-2 md:ml-7 transition-colors text-white font-semibold px-8 md:px-12 py-2 rounded-full shadow-md hover:bg-red-600"
-          onClick={() => navigate("/SajelDark")}
-        >
-          Record of Darak
+           onClick={() => navigate("/SajelDark")} >
+          Record oF DARAK 
         </button>
       </div>
     </div>

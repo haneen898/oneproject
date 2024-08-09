@@ -3,6 +3,7 @@ import Footer from '../layout/Footer';
 import NavBar from '../layout/NavBar';
 
 function SajelDarak() {
+
   return (
     <div className="bg-gradient-to-r from-gray-300 to-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-center mt-10">
@@ -15,32 +16,34 @@ function SajelDarak() {
         </div>
         <div className="w-full md:w-1/2 p-6 flex flex-col items-center md:items-start">
           <h2 className="text-2xl font-bold mb-4 text-red-600 text-center md:text-left text-black-600">Sign up DARAK</h2>
-          <form className="w-full space-y-4" action="https://formspree.io/f/mpzvkjvb" method="post">
+          <form className="w-full space-y-4" action='https://formspree.io/f/mpzvkjvb' method='post'>
             <div>
               <label className="block text-gray-700 text-left mb-1">Name DARAK:</label>
-              <input type="text" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="text" name="Name DARAK:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Address:</label>
-              <input type="text" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="text" name="Address:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Number of orphans:</label>
-              <input type="number" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="number" name="Number of orphans:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Phone Number:</label>
-              <input type="tel" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="tel" name="Phone Number:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Email:</label>
-              <input type="email" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="email" name="Email:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Registration Papers:</label>
-              <input type="file" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" accept=".pdf" />
+              <input type="file" name="Registration Papers:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" accept=".pdf" />
             </div>
-            <button type="submit" className="w-full hover:bg-blue-700 flex items-center justify-center px-6 py-2 bg-blue-600 text-white rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none">
+            <button type="submit" className="w-full hover:bg-blue-700 flex items-center justify-center px-6 py-2 bg-blue-600 text-white rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none"
+            
+            >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="none"
@@ -56,7 +59,7 @@ function SajelDarak() {
                 >
                 </path>
               </svg>
-              <span>Sign Up</span>
+              <span>Send</span>
             </button>
           </form>
           <p className="text-center md:text-left mt-4">The DARAK will be visited upon arrival of the request</p>

@@ -7,28 +7,27 @@ import Doorcompount from './Door'
 import Footer from '../layout/Footer';
 import NavBar from '../layout/NavBar';
 import Carddonate from '../component/Card';
-import AboutUS from '../component/AboutUS'
+import AboutUS from '../component/AboutUS';
+import Layout from '../layout/Layout';
 
 
 const HomePage = () => {
   
   return (
    <>
-   <nav>
+   
   <NavBar/>
-   </nav>
+
   
    <HeroCompount/>
     <Carddonate/>
     <AboutUS/>
    <TbroaComponent/>
    <SajelComponent/>
-   {/* <Doorcompount/> */}
    
   
-   <footer>
     <Footer/>
-   </footer>
+   
    </>
 
   

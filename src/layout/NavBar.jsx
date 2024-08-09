@@ -1,114 +1,70 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const drawerWidth = 150;
-const navItems = ['About', 'Contact', 'List of registered orphanages'];
-
-function DrawerAppBar(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-      TABRA.COM
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
-  const container = window !== undefined ? () => window().document.body : undefined;
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   let navigate = useNavigate();
   return (
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h5"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: '', sm: 'block' } }}
-          >
-            TabaraCOM
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button  onClick={() => navigate("/Dark")} key={item}  sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-      <Box component="main" sx={{ p: 4 }}>
-      
-      </Box>
-    </Box>
+    <nav className="bg-blue-700 p-2">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <img src="/hands.png" alt="Logo" className=" h-10 w-10 mr-2" />
+          <span className="text-white text-xl font-bold">TaBaraCOM</span>
+        </div>
+        <div className="block lg:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              {isOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+              )}
+            </svg>
+          </button>
+        </div>
+        <div className="hidden lg:flex lg:items-center lg:w-auto">
+          <div className="lg:flex lg:space-x-4">
+          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
+               onClick={() => navigate("/About")}>AboutUs</button>
+          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
+               onClick={() => navigate("/ContactUs")}>ContactUs</button>
+          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
+          onClick={() => navigate("/Dark")} >List of registered orphanages</button>
+          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
+               onClick={() => navigate("/Signin")}>LogIn</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <div
+        className={`fixed inset-0 bg-blue-200 bg-opacity-75 z-50 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform lg:hidden`}
+        onClick={() => setIsOpen(false)}
+      >
+        <div className="fixed inset-y-0 left-0 w-64 bg-blue-900 p-4">
+          <div className="flex items-center justify-between mb-8">
+            <div className="text-white text-xl font-bold">TaBaraCOM</div>
+            <button onClick={() => setIsOpen(false)} className="text-white focus:outline-none">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <nav>
+            <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
+             onClick={() => navigate("/About")}>AboutUS</button>
+            <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
+              onClick={() => navigate("/ContactUs")}>ContactUs</button>
+            <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
+             onClick={() => navigate("/Dark")}>List of registered orphanages</button>
+          </nav>
+        </div>
+      </div>
+    </nav>
   );
-}
-
-DrawerAppBar.propTypes = {
-
-  window: PropTypes.func,
 };
 
-export default DrawerAppBar;
-
-
+export default Navbar;
 
 
 

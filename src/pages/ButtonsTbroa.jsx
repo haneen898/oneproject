@@ -37,7 +37,7 @@ function ButtonsTbroa() {
           {ButtonsTbroaw.map((title, index) => (
             <button
               key={index}
-              className="bg-blue-600 text-black font-bold py-2 rounded shadow-md hover:bg-blue-700 hover:shadow-blue-900 h-20 md:hover:shadow-blue-900"
+              className="bg-blue-600 text-white font-bold py-2 rounded shadow-md hover:bg-blue-700 hover:shadow-blue-900 h-20 md:hover:shadow-blue-900"
               onClick={() => navigate("/Input")}
             >
               {title}

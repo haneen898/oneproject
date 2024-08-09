@@ -7,7 +7,7 @@ import Tbroacompount from './component/Tbroa';
 import Sajelcompount from './component/Sajel'
 import Doorcompount from './component/Door'
 import Footer from './layout/Footer'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from './component/HomePage';
 import HeroCompount from './component/Hero';
 import InputForm from './pages/Input';
@@ -19,12 +19,22 @@ import OrphansTable from './pages/Dark';
 import Carddonate from './component/Card';
 import AboutMission from './pages/About';
 import AboutUS from './component/AboutUS';
+import SignIn from './component/auth/Signin';
+import SignUp from './component/auth/Signup';
+import ContactDetails from './pages/ContactUs'
+// import AuthDetails from './component/auth/AuthDetails';
+// import firebase from './firebase';
+
 
 function App() {
   return (
-    <div className=''>
-      <BrowserRouter>
+    <>
+      
+
+        <BrowserRouter>
+     
         <Routes>
+          
           <Route path='/' element={<HomePage/>}></Route>
           <Route path='/Home' element={<HomePage/>}></Route>
           <Route path='/Hero' element={<HeroCompount/>}></Route>
@@ -38,10 +48,17 @@ function App() {
           <Route path='/Dark' element={<OrphansTable/>}></Route>
           <Route path='/Card' element={<Carddonate/>}></Route>
           <Route path='/About' element={<AboutMission/>}></Route>
-          <Route path='/AboutUS' element={<AboutUS/>}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+          <Route path='/ContactUs' element={<ContactDetails/>}></Route>
+          <Route path='/SignUp' element={<SignUp/>}></Route>
+          <Route path='/Signin' element={<SignIn/>}></Route>
+          </Routes>
+   
+          </BrowserRouter> 
+     
+     
+
+
+    </>
   );
 }
 

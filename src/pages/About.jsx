@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from '../layout/NavBar';
 
 function AboutMission() {
+  
   return (
-    
-    <div className=" max-w-7xl mx-auto pt-20 ml-20 mr-11">
+    <>
+     <div className=" max-w-7xl mx-auto pt-20 ml-20 mr-11">
+      
       <div className=" min-h-screen grid md:grid-cols-2 gap-8">
        
         <div className="flex justify-center">
@@ -17,30 +20,28 @@ function AboutMission() {
        
         <div className="flex flex-col justify-center">
         <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
+            <h2 className="text-blue-600 text-2xl font-bold mb-2">Our Mission</h2>
             <p className="text-gray-600">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non. Vero facere temporibus, impedit tempore incidunt nemo.
-             Ipsam inventore voluptates itaque, sit exercitationem cumque quidem praesentium. Itaque fugiat maiores corrupti.            </p>
+            'Facilitates your donation if you are interested in educating orphans,
+             caring for and volunteering for them, you have nothing to pay and no money to apply We are here to help you'           </p>
           </div>
           <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-2">Our Vision</h2>
+          <h2 className="text-blue-600 text-2xl font-bold mb-2">Our Vision</h2>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestias illo explicabo. Commodi, incidunt voluptatibus nesciunt
-               eveniet dolorem eligendi sit quis, itaque facilis fuga numquam repellat necessitatibus iusto aspernatur exercitationem.            </p>
+            Choose your donation and register with us. If you want to build a beautiful future for orphaned children in the field of education, 
+            take care of their health and take care of them is fully formed, and you have nothing to pay and no money to apply be with us            </p>
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-2">Why Do We Do This</h2>
+            <h2 className="text-blue-600 text-2xl font-bold mb-2">Why Do We Do This</h2>
             <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea ipsam ullam sit, 
-            et totam eos cupiditate sapiente quae eveniet nihil quos officiis nulla saepe sequi delectus facere, eligendi in?
+              We loved to be a trusted name to help the poor, we are working on this project to make the world equal for all
             </p>
-            <a href="/About" className="text-red-500 mt-4 inline-block">
-              Check our mission &rarr;
-            </a>
           </div>
         </div>
       </div>
     </div>
+    </>
+   
   );
 }
 

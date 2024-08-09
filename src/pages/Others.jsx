@@ -12,43 +12,41 @@ const DonationForm = () => {
       </div>
       <div className="md:w-1/2 p-4">
         <h2 className="text-xl font-bold text-blue-600 mb-4">Make a Donation</h2>
-        <div className="space-y-4">
+        <form className="space-y-4"  action='https://formspree.io/f/mpzvkjvb' method='post'>
           <input 
-            type="text"
-            placeholder=" Who are you?"
+            type="text" name='Who are you?' placeholder="Who are you?"
             className="w-full p-2 border border-blue-300 focus:ring-blue-600 rounded"
           />
           <input 
-            type="text"
-            placeholder="What would you like to serve?"
+            type="text" name='What would you like to serve?' placeholder="What would you like to serve?"
             className="w-full p-2 border border-blue-300 focus:ring-blue-600 rounded"
           />
           <input 
-            type="text"
-            placeholder="How can I contact you?"
+            type="text" name='How can I contact you?' placeholder="How can I contact you?"
             className="w-full p-2 border border-blue-300 rounded focus:ring-blue-600"
           />
-        </div>
-      <button className="flex items-center justify-center mt-8 px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none">
-       <svg
-        className="w-4 h-4 mr-2"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M14 5l7 7m0 0l-7 7m7-7H3"
-        >
-        </path>
-      </svg>
-           Send
-        </button>  
+          <button 
+            type="submit"
+            className="flex items-center justify-center mt-8 px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none"
+          >
+            <svg
+              className="w-4 h-4 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+            Send
+          </button>  
+        </form>
       </div>
-      
     </div>
   );
 };
