@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Layout from './layout/Layout';
-import NavBar from './layout/NavBar'
-import MyComponent from './component/Hero';
 import Tbroacompount from './component/Tbroa';
 import Sajelcompount from './component/Sajel'
 import Doorcompount from './component/Door'
-import Footer from './layout/Footer'
 import {BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from './component/HomePage';
 import HeroCompount from './component/Hero';
 import InputForm from './pages/Input';
 import ButtonsTbroa from './pages/ButtonsTbroa';
-import { Home } from '@mui/icons-material';
 import SajelDarak from './pages/SajelDark'
 import DonationForm from './pages/Others'
 import OrphansTable from './pages/Dark';
 import Carddonate from './component/Card';
 import AboutMission from './pages/About';
-import AboutUS from './component/AboutUS';
 import SignIn from './component/auth/Signin';
 import SignUp from './component/auth/Signup';
 import ContactDetails from './pages/ContactUs'

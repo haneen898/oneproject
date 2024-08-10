@@ -11,7 +11,7 @@ function SajelDarak() {
       <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-center mt-10">
 
         <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-4 md:mb-0">
-          <img src="" alt="Children"className="w-full object-cover rounded-lg"/>
+          <img src="https://th.bing.com/th/id/OIP.Eb-PvqrAJmIIY4J_reonQQHaEv?rs=1&pid=ImgDetMain" alt="Children"className="w-full object-cover rounded-lg"/>
         </div>
 
         <div className="w-full md:w-1/2 p-6 flex flex-col items-center md:items-start">

@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import icon from '@mui/icons-material'
 import Navbar from '../layout/NavBar';
 import Footer from '../layout/Footer';
 

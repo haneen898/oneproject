@@ -1,8 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const HeroCompount = () => {
-  let navigate = useNavigate();
   return (
     <div className="flex flex-col items-center justify-center p-8 md:flex-row">
       <div className="w-full mb-8 md:w-1/2 md:mb-0">
