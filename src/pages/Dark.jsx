@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from '../layout/NavBar';
+import Footer from '../layout/Footer';
 
 const OrphansTable = () => {
   const data = [
@@ -18,7 +20,9 @@ const OrphansTable = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-300 mt-14 container mx-auto p-4">
+    <>
+    <Navbar/>
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-300 mt-14 m-12 container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4 text-center bg-blue-200 p-2 rounded-md">
       List of registered houses on the site
       </h1>
@@ -43,6 +47,9 @@ const OrphansTable = () => {
         </table>
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 };
 

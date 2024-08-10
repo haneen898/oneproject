@@ -1,10 +1,13 @@
 import React from 'react';
 import Navbar from '../layout/NavBar';
+import Footer from '../layout/Footer';
 
 
 const InputForm = () => {
  
   return (
+    <>
+    <Navbar/>
     <div className="relative flex items-center justify-center p-4 bg-gradient-to-r from-gray-200 to-indigo-100"
       style={{
         backgroundImage: `url('https://mamasmusthaves.com/wp-content/uploads/2021/11/Donating-Toys-to-make-room-in-Playroom-1024x731.jpg')`,
@@ -75,6 +78,9 @@ const InputForm = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 }
 

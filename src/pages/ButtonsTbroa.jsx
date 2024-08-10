@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../layout/NavBar';
+import Footer from '../layout/Footer';
 
 const ButtonsTbroaw = [
   'Clothes',
@@ -18,7 +20,9 @@ function ButtonsTbroa() {
   let navigate = useNavigate();
 
   return (
-    <div className="bg-gradient-to-r from-gray-200 to-gray-300 min-h-screen flex flex-col md:flex-row justify-center items-center p-10">
+    <>
+    <Navbar/>
+    <div className="bg-gradient-to-r from-gray-200 to-indigo-100 min-h-screen flex flex-col md:flex-row justify-center items-center p-10">
       <div className=" p-8 flex flex-col items-center md:w-1/2 w-full">
         <h1 className="text-5xl text-red-600 font-bold mb-10 text-center">Donation</h1>
         <p className="text-center mb-4">
@@ -46,6 +50,9 @@ function ButtonsTbroa() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 }
 
