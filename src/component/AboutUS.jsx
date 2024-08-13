@@ -7,15 +7,15 @@ const AboutUS = () => {
 
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 p-4 md:p-8 bg-white">
-      <div className="w-full mb-8 md:w-1/2 md:mb-0">
+      <div className="w-full mb-4 md:w-1/2 md:mb-0">
         <img
           src="https://djuqbvg97u5zb.cloudfront.net/printlabo/images/cms/ab_1713604518002.png"
           alt="Our Mission"
-          className="w-full h-auto rounded-lg shadow-md"
+          className="w-full h-auto mt-10 rounded-lg shadow-md"
         />
       </div>
 
-      <div className="pt-40 w-full md:w-1/2 text-center md:text-left ">
+      <div className="pt-32 w-full md:w-1/2 text-center md:text-left ">
         <p className="text-sm font-semibold text-red-500 mb-2">About Us</p>
         <h2 className="text-4xl text-blue-600 font-bold mb-4">Our Mission</h2>
         <p className="text-gray-700 text-xl mb-8">

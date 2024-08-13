@@ -5,14 +5,12 @@ import Footer from '../layout/Footer';
 
 const ButtonsTbroaw = [
   'Clothes',
-  'Education and training courses',
-  'Electrical Appliances',
-  'Medicine and health service',
   'Food',
   'Furniture',
-  'Toys',
   'Tourist trip',
-  'School Supplies',
+  'Electrical Appliances',
+  'Education and training courses',
+  'Medicine and health service',
   'Others'
 ];
 

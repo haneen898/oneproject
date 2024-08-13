@@ -14,9 +14,9 @@ const HeroCompount = () => {
         <h1 className="text-3xl font-bold text-blue-600 sm:text-5xl">We help all people</h1>
         <h2 className="mt-2 text-2xl font-bold text-blue-600 sm:text-4xl">Together We Will Rebuild Our Future</h2>
         <p className="mt-4 text-gray-800">
-          "TabaraCOM is here to build a safe future for next generations"
+          "TabaraCOM is here to build a safe future for next generations
           We embrace cooperation rather than avoid it as we believe that
-           "we elevate others" and thus seek the benefit of all our partners in society collectively
+           "we elevate others and thus seek the benefit of all our partners in society collectively"
         </p>
         <div className="mt-8 space-y-4 flex flex-col items-center sm:flex-row sm:space-y-0 sm:space-x-4 sm:justify-center md:mt-12 lg:mt-16">
           {/* <button 
