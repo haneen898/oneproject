@@ -1,6 +1,11 @@
 import React from 'react';
 import Navbar from '../layout/NavBar';
 import Footer from '../layout/Footer';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 function ContactDetails() {
   return (
@@ -19,12 +24,30 @@ function ContactDetails() {
       <div className="relative bg-white rounded-lg shadow-lg p-8 flex flex-wrap max-w-4xl w-full">
         <div className="mt-12 w-full md:w-1/2 p-4">
           <h2 className="text-blue-600 text-2xl font-bold mb-4">Get in Touch With Us</h2>
-          <p className="text-gray-600 mb-8">
-            Aliq is notm hendr erit a augue insu image pellen tes que id erat
-            quis sollicitud. Lorem ipsum is simply free text dolor sit amet,
-            consectetur adipiscing ullam blandit hendrerit faucibus suspendisse.
+          <p className=" text-gray-600 mb-8">
+            Have questions? Need help? Contact us
+            Ready to donate? Let's talk
+            Connect with our team. We're here to answer your questions and guide you through the donation process.
+             Want to learn more? Get in touch to discover how your donation can make a difference.
+             Let's make a difference together. Contact us to learn more about our mission.
+              Reach out and join our community of donors.
           </p>
+          <div className="flex space-x-4">
+            <a href="https://www.linkedin.com/in/haneen-mansoor-905b76245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-red-500">
+             <LinkedInIcon/> <i className="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/haneen.mansoor.90?mibextid=LQQJ4d" className="text-blue-500">
+             <FacebookIcon/> <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/design__front23?igsh=bW90eWhtbGdzNzh2&utm_source=qr" className="text-yellow-500">
+            <InstagramIcon/> <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/haneen898" className="text-purple-500">
+             <GitHubIcon/> <i className="fab fa-gitHub"></i>
+            </a>
+          </div>
         </div>
+        
         <div className="w-full md:w-1/2 p-4">
           <form className="space-y-4" action='https://formspree.io/f/mpzvkjvb' method='post'>
             <div>

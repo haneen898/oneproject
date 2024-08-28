@@ -30,21 +30,23 @@ function AboutMission() {
       <div className="mb-8">
         <h2 className="text-blue-600 text-2xl font-bold mb-2">Our Mission</h2>
         <p className="text-gray-700">
-          Facilitates your donation if you are interested in educating orphans,
-          caring for and volunteering for them, you have nothing to pay and no money to apply. We are here to help you.
+        Our mission is to foster a compassionate and supportive community where everyone has the opportunity to thrive. We strive to bridge the gap between those in need and those who want to make a difference. By providing a transparent and efficient platform,
+         we empower individuals and organizations to contribute to meaningful causes and create a lasting positive impact on society.
         </p>
       </div>
       <div className="mb-8">
         <h2 className="text-blue-600 text-2xl font-bold mb-2">Our Vision</h2>
         <p className="text-gray-700">
-          Choose your donation and register with us. If you want to build a beautiful future for orphaned children in the field of education, 
-          take care of their health and take care of them is fully formed, and you have nothing to pay and no money to apply be with us.
+        Build a Brighter Future for Orphans,
+        Join our mission to provide orphaned children with the education, healthcare, and support they need to thrive,
+         Donate your time, resources, or funds to help shape a brighter future for these young individuals.
         </p>
       </div>
       <div>
         <h2 className="text-blue-600 text-2xl font-bold mb-2">Why Do We Do This</h2>
         <p className="text-gray-700">
-          We loved to be a trusted name to help the poor, we are working on this project to make the world equal for all.
+        Our commitment to helping the poor stems from a deep belief in equality and compassion,
+         We strive to create a world where everyone has the opportunity to thrive, regardless of their circumstances.
         </p>
       </div>
     </div>

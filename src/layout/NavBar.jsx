@@ -25,13 +25,11 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:items-center lg:w-auto">
           <div className="lg:flex lg:space-x-4">
           <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-               onClick={() => navigate("/About")}>AboutUs</button>
+               onClick={() => navigate("/About")}>About Us</button>
           <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-               onClick={() => navigate("/ContactUs")}>ContactUs</button>
+               onClick={() => navigate("/ContactUs")}>Contact Us</button>
           <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
           onClick={() => navigate("/Dark")} >List of registered orphanages</button>
-          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-               onClick={() => navigate("/Signin")}>LogIn</button>
           </div>
         </div>
       </div>
@@ -52,9 +50,9 @@ const Navbar = () => {
           </div>
           <nav>
             <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
-             onClick={() => navigate("/About")}>AboutUS</button>
+             onClick={() => navigate("/About")}>About US</button>
             <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
-              onClick={() => navigate("/ContactUs")}>ContactUs</button>
+              onClick={() => navigate("/ContactUs")}>Contact Us</button>
             <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
              onClick={() => navigate("/Dark")}>List of registered orphanages</button>
           </nav>

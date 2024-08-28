@@ -7,6 +7,7 @@ import Footer from '../layout/Footer';
 import NavBar from '../layout/NavBar';
 import Carddonate from '../component/Card';
 import AboutUS from '../component/AboutUS';
+import DonationMake from '../component/MakeDonation';
 
 
 const HomePage = () => {
@@ -17,11 +18,12 @@ const HomePage = () => {
   <NavBar/>
 
   
-   <HeroCompount/>
+    <HeroCompount/>
     <Carddonate/>
     <AboutUS/>
-   <TbroaComponent/>
-   <SajelComponent/>
+    <DonationMake/>
+    <TbroaComponent/>
+    <SajelComponent/>
    
   
     <Footer/>

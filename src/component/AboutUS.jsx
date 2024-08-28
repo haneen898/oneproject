@@ -19,14 +19,13 @@ const AboutUS = () => {
         <p className="text-sm font-semibold text-red-500 mb-2">About Us</p>
         <h2 className="text-4xl text-blue-600 font-bold mb-4">Our Mission</h2>
         <p className="text-gray-700 text-xl mb-8">
-          'Facilitates your donation if you are interested in educating orphans, caring for and volunteering for them,
-          you have nothing to pay and no money to apply We are here to help you'
+        We’re a community-driven platform dedicated to connecting those in need with generous donors, Our mission is to make a positive impact by facilitating donations that directly address critical issues in our community,
         </p>
         <button
-          className="bg-red-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-red-600 transition-colors"
+          className="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-600 transition-colors"
           onClick={() => navigate("/About")}
         >
-          LEARN MORE
+        Learn More
         </button>
       </div>
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SchoolIcon from '@mui/icons-material/School';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
 
-const Card = ({ title, buttonLabel, backgroundImage }) => {
+const Card = ({ icon, title, buttonLabel, backgroundImage }) => {
     let navigate = useNavigate();
     return (
         <div
@@ -12,9 +15,10 @@ const Card = ({ title, buttonLabel, backgroundImage }) => {
              backgroundPosition: 'center',
             }}>
             <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+            <div className="relative z-10 mb-4">{icon}</div>
             <h2 className="relative z-10 text-2xl font-semibold text-white mb-2">{title}</h2>
             <button
-              className="relative z-10 bg-red-500 text-white shadow-md font-bold py-2 px-4 rounded-full hover:bg-red-600 hover:shadow-xl transition-colors"
+              className="relative z-10 bg-red-500 text-white shadow-md py-2 px-4 rounded-full hover:bg-red-600 hover:shadow-xl transition-colors"
                 onClick={() => navigate("/Others")} >
                 {buttonLabel}
             </button>
@@ -25,23 +29,27 @@ const Card = ({ title, buttonLabel, backgroundImage }) => {
 const Carddonate = () => {
     return (
         <div className="flex flex-col md:flex-row">
-            <Card
-              title="Education Projects in Iraq"
+            <Card 
+             icon={<SchoolIcon className="text-white text-4xl" />}
+              title="Offer education service to orphans"
                buttonLabel="DONATE NOW"
-                backgroundImage="https://modo3.com/thumbs/fit630x300/9969/1426082303/%D8%B7%D8%B1%D9%82_%D8%AA%D8%AF%D8%B1%D9%8A%D8%B3_%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84_%D9%81%D9%8A_%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D8%A9_%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84.jpg"  
+                backgroundImage="https://media2.ledevoir.com/images_galerie/nwd_1463064_1122500/image.jpg"  
             />
             <Card
-             title="Orphans Health Access Program"
+            icon={<HealthAndSafetyIcon className='text-white size- text-4xl'/>}
+             title="Offer health services to orphans"
               buttonLabel="DONATE NOW"
                backgroundImage="https://www.institutefornaturalhealing.com/wp-content/uploads/2021/04/iStock-1089976414.jpg"
             />
             <Card
-             title="Food Assistance for Orphans"
+            icon={<FastfoodIcon className='text-white text-4xl' />}
+             title="Offer food services to orphans"
               buttonLabel="DONATE NOW"
-               backgroundImage="https://foodbanknwi.org/wp-content/uploads/sites/5/2015/03/Food_018.jpg"
+               backgroundImage="https://underscore.factor75.com/wp-content/uploads/2020/03/2-1.png"
             />
         </div>
     );
 };
 
 export default Carddonate;
+
