@@ -24,7 +24,7 @@ const HeroCompount = () => {
           we can achieve more than we could alone.
         </p>
         <button 
-          className=" mt-6 border-solid border-2 border-gray-400 text-red-500 font-semibold px-8 md:px-12 py-2 rounded-full shadow-md hover:shadow-xl transition-colors"
+          className=" mt-6 bg-red-500 text-white font-semibold px-8 md:px-12 py-2 rounded-full shadow-md hover:shadow-xl hover:bg-red-600 transition-colors"
          onClick={() => navigate("/ButtonsTbroa")} >
           DONATE NOW
         </button> 

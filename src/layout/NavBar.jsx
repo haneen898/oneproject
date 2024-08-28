@@ -24,12 +24,15 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex lg:items-center lg:w-auto">
           <div className="lg:flex lg:space-x-4">
+            <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
+          onClick={() => navigate("/Home")} >Home</button>
           <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
                onClick={() => navigate("/About")}>About Us</button>
           <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
                onClick={() => navigate("/ContactUs")}>Contact Us</button>
           <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
           onClick={() => navigate("/Dark")} >List of registered orphanages</button>
+          
           </div>
         </div>
       </div>
@@ -49,6 +52,8 @@ const Navbar = () => {
             </button>
           </div>
           <nav>
+          <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
+             onClick={() => navigate("/Home")}>Home</button>
             <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
              onClick={() => navigate("/About")}>About US</button>
             <button className="text-white px-3 py-2 rounded w-full text-left mb-2"
