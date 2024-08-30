@@ -20,7 +20,7 @@ const DonationMake = () => {
     
     <div className="relative min-h-fit m-4 rounded-lg flex items-center justify-center bg-cover bg-center"
     style={{
-        backgroundImage: `url('https://source.wustl.edu/app/uploads/2016/11/Donations-600x400.jpg')`,
+        backgroundImage: `url('https://www.raialyoum.com/wp-content/uploads/2023/03/2023-03-15_06-38-39_609693.jpeg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>
