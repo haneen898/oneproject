@@ -8,7 +8,8 @@ const Card = ({ icon, title, buttonLabel, backgroundImage }) => {
     let navigate = useNavigate();
     return (
         <div
-            className="relative flex flex-col items-center justify-center text-center p-20 m-4 mt-12 bg-cover bg-center rounded-lg shadow-md hover:shadow-xl"
+            className="relative flex flex-col items-center justify-center text-center 
+            p-20 m-4 mt-12 bg-cover bg-center rounded-lg shadow-md hover:shadow-xl"
             style={{
              backgroundImage: `url(${backgroundImage})`,
              backgroundSize: 'cover',
@@ -18,7 +19,8 @@ const Card = ({ icon, title, buttonLabel, backgroundImage }) => {
             <div className="relative z-10 mb-4">{icon}</div>
             <h2 className="relative z-10 text-2xl font-semibold text-white mb-2">{title}</h2>
             <button
-              className="relative z-10 bg-red-500 text-white shadow-md py-2 px-4 rounded-full hover:bg-red-600 hover:shadow-xl transition-colors"
+              className="relative z-10 bg-red-500 text-white shadow-md py-2 px-4 rounded-full
+               hover:bg-red-600 hover:shadow-xl transition-colors"
                 onClick={() => navigate("/Others")} >
                 {buttonLabel}
             </button>
@@ -33,19 +35,19 @@ const Carddonate = () => {
              icon={<SchoolIcon className="text-white text-4xl" />}
               title="Offer education service to orphans"
                buttonLabel="DONATE NOW"
-                backgroundImage="https://media2.ledevoir.com/images_galerie/nwd_1463064_1122500/image.jpg"  
+                backgroundImage="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201612/647_120616041123.jpg"  
             />
             <Card
             icon={<HealthAndSafetyIcon className='text-white size- text-4xl'/>}
              title="Offer health services to orphans"
               buttonLabel="DONATE NOW"
-               backgroundImage="https://www.institutefornaturalhealing.com/wp-content/uploads/2021/04/iStock-1089976414.jpg"
+               backgroundImage="https://www.unicef.org/iraq/sites/unicef.org.iraq/files/styles/large/public/UNI218436_0.jpg.webp?itok=XMW-a_e3"
             />
             <Card
             icon={<FastfoodIcon className='text-white text-4xl' />}
              title="Offer food services to orphans"
               buttonLabel="DONATE NOW"
-               backgroundImage="https://underscore.factor75.com/wp-content/uploads/2020/03/2-1.png"
+               backgroundImage="https://webapi.project-syndicate.org/library/1e1af1c2ff1690e868f233b8be152811.jpg"
             />
         </div>
     );

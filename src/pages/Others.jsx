@@ -15,23 +15,24 @@ const DonationForm = () => {
     />
   </div>
   <div className="md:w-1/2 p-4">
-    <h2 className="text-xl font-bold text-blue-600 mb-4">Make a Donation</h2>
+    <h2 className="text-xl font-bold text-blue-800 mb-4">Make a Donation</h2>
     <form className="space-y-4" action="https://formspree.io/f/mpzvkjvb" method="post">
       <input 
         type="text" name="Who are you?" placeholder="Who are you?"
-        className="w-full p-2 border border-blue-300 focus:ring-blue-600 rounded"
+        className="w-full p-2 border border-blue-300 focus:ring-blue-800 rounded"
       />
       <input 
         type="text" name="What would you like to serve?" placeholder="What would you like to serve?"
-        className="w-full p-2 border border-blue-300 focus:ring-blue-600 rounded"
+        className="w-full p-2 border border-blue-300 focus:ring-blue-800 rounded"
       />
       <input 
         type="text" name="How can I contact you?" placeholder="How can I contact you?"
-        className="w-full p-2 border border-blue-300 rounded focus:ring-blue-600"
+        className="w-full p-2 border border-blue-300 rounded focus:ring-blue-800"
       />
       <button 
         type="submit"
-        className="flex items-center justify-center mt-8 px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none"
+        className="flex items-center justify-center mt-8 px-6 py-2 bg-blue-800 text-white font-semibold rounded-full shadow-md 
+        transform transition-transform duration-300 hover:scale-105 focus:outline-none"
       >
         <svg
           className="w-4 h-4 mr-2"

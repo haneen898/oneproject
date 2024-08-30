@@ -7,7 +7,7 @@ const InputForm = () => {
   return (
     <>
       <Navbar/>
-      <div className="relative flex items-center justify-center p-4 bg-gradient-to-r from-gray-200 to-indigo-100"
+      <div className="relative h-full flex items-center justify-center p-4 bg-gradient-to-r from-gray-200 to-indigo-100"
         style={{
           backgroundImage: `url('https://mamasmusthaves.com/wp-content/uploads/2021/11/Donating-Toys-to-make-room-in-Playroom-1024x731.jpg')`,
           backgroundSize: 'cover',
@@ -41,7 +41,7 @@ const InputForm = () => {
 
             <div className="mb-4">
               <label className="block text-gray-700">Describe what you want to donate (quantity, type, breakable, weight, size)</label>
-              <input type="text" name='Describe what you want to donate (quantity, type, breakable, weight, size)' className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="text" name='Describe what you want to donate (quantity, type, breakable, weight, size)' className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900" />
             </div>
 
             <div className="mb-6">
@@ -52,7 +52,7 @@ const InputForm = () => {
               </div>
             </div>
 
-            <button className="flex items-center justify-center px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none"
+            <button className="flex items-center justify-center px-6 py-2 bg-blue-900 text-white font-semibold rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none"
             >
               <svg
                 className="w-4 h-4 mr-2"
@@ -73,7 +73,7 @@ const InputForm = () => {
           </form>
 
           <div className="mt-4 text-center">
-            <h6 className="text-blue-600">Thank you .. We will contact you as soon as we notice the request</h6>
+            <h6 className="text-blue-900">Thank you .. We will contact you as soon as we notice the request</h6>
           </div>
         </div>
       </div>

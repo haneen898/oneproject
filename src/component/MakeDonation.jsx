@@ -29,8 +29,8 @@ const DonationMake = () => {
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
 
       <form onSubmit={handleSubmit} className="m-10 relative max-w-xl mx-auto p-6 bg-white bg-opacity-90 rounded-lg shadow-md">
-        <h2 className="text-2xl text-blue-600 font-bold mb-2 text-center">Make a Donation</h2>
-        <p className="text-gray-600 mb-4 text-center">
+        <h2 className="text-2xl text-blue-800 font-bold mb-2 text-center">Make a Donation</h2>
+        <p className="text-gray-600 italic mb-4 text-center">
           Every donation, no matter how big or small, makes a significant difference to our cause. 
           Thank you for doing your part to help.
         </p>

@@ -19,29 +19,29 @@ function SajelDarak() {
           <form className="w-full space-y-4" action='https://formspree.io/f/mpzvkjvb' method='post'>
             <div>
               <label className="block text-gray-700 text-left mb-1">Name DARAK:</label>
-              <input type="text" name="Name DARAK:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="text" name="Name DARAK:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Address:</label>
-              <input type="text" name="Address:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="text" name="Address:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Number of orphans:</label>
-              <input type="number" name="Number of orphans:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="number" name="Number of orphans:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Phone Number:</label>
-              <input type="tel" name="Phone Number:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="tel" name="Phone Number:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Email:</label>
-              <input type="email" name="Email:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input type="email" name="Email:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" />
             </div>
             <div>
               <label className="block text-gray-700 text-left mb-1">Registration Papers:</label>
-              <input type="file" name="Registration Papers:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" accept=".pdf" />
+              <input type="file" name="Registration Papers:" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" accept=".pdf" />
             </div>
-            <button type="submit" className="w-full hover:bg-blue-700 flex items-center justify-center px-6 py-2 bg-blue-600 text-white rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none" >
+            <button type="submit" className="w-full hover:bg-blue-700 flex items-center justify-center px-6 py-2 bg-blue-800 text-white rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 focus:outline-none" >
               <svg
                 className="w-4 h-4 mr-2"
                 fill="none"
@@ -60,7 +60,7 @@ function SajelDarak() {
               <span>Send</span>
             </button>
           </form>
-             <p className="text-center md:text-left mt-4">The DARAK will be visited upon arrival of the request</p>
+             <p className="text-center text-blue-800 md:text-left mt-4">The DARAK will be visited upon arrival of the request</p>
          </div>
         </div>
        </div>

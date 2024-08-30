@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   let navigate = useNavigate();
   return (
-    <nav className="bg-blue-700 p-2">
+    <nav className="bg-blue-900 p-2">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src="/hands.png" alt="Logo" className=" h-10 w-10 mr-2" />
@@ -23,18 +23,38 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:items-center lg:w-auto">
-          <div className="lg:flex lg:space-x-4">
-            <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-          onClick={() => navigate("/Home")} >Home</button>
-          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-               onClick={() => navigate("/About")}>About Us</button>
-          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-               onClick={() => navigate("/ContactUs")}>Contact Us</button>
-          <button className="text-white border-solid border-b border-r-white hover:bg-blue-900 px-2 py-1 rounded-full"
-          onClick={() => navigate("/Dark")} >List of registered orphanages</button>
-          
-          </div>
-        </div>
+  <div className="lg:flex lg:space-x-4">
+    <button 
+      className="text-white italic border-solid border-b border-white px-2 py-1 rounded-md shadow-lg
+       transform hover:translate-y-1 active:translate-y-0 transition-transform duration-200"
+      onClick={() => navigate("/Home")}
+    >
+      Home
+    </button>
+    <button 
+       className="text-white italic border-solid border-b border-white px-2 py-1 rounded-md shadow-lg
+       transform hover:translate-y-1 active:translate-y-0 transition-transform duration-200"
+      onClick={() => navigate("/About")}
+    >
+      About Us
+    </button>
+    <button 
+      className="text-white italic border-solid border-b border-white px-2 py-1 rounded-md shadow-lg
+       transform hover:translate-y-1 active:translate-y-0 transition-transform duration-200"
+      onClick={() => navigate("/ContactUs")}
+    >
+      Contact Us
+    </button>
+    <button 
+      className="text-white italic border-solid border-b border-white px-2 py-1 rounded-md shadow-lg
+       transform hover:translate-y-1 active:translate-y-0 transition-transform duration-200"
+      onClick={() => navigate("/Dark")}
+    >
+      List of registered orphanages
+    </button>
+  </div>
+</div>
+
       </div>
 
       {/* Sidebar */}

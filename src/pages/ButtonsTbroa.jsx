@@ -23,13 +23,13 @@ function ButtonsTbroa() {
     <div className="bg-gradient-to-r from-gray-200 to-indigo-100 min-h-screen flex flex-col md:flex-row justify-center items-center p-10">
       <div className=" p-8 flex flex-col items-center md:w-1/2 w-full">
         <h1 className="text-5xl text-red-600 font-bold mb-10 text-center">Donation</h1>
-        <p className="text-center mb-4">
+        <p className="text-center italic mb-4">
           Collaboration We allocate donation based on the projects we are currently working on
           <br />
           Thank you for your donation to support all members of our community in social trends.
         </p>
         <img
-          src="https://www.thesimplicityhabit.com/wp-content/uploads/2023/03/40.jpg"
+          src="https://img.freepik.com/premium-photo/palestine-children-look-destruction-effect-war-crisis-damaged-buildings-city_217051-3373.jpg"
           alt="Donation"
           className="w-max h-80 object-cover rounded-lg mb-4"
         />
@@ -39,7 +39,7 @@ function ButtonsTbroa() {
           {ButtonsTbroaw.map((title, index) => (
             <button
               key={index}
-              className="bg-blue-600 text-white font-bold py-2 rounded shadow-md hover:bg-blue-700 hover:shadow-blue-900 h-20 md:hover:shadow-blue-900"
+              className="bg-blue-900 text-white font-bold py-2 rounded shadow-md hover:bg-blue-700 hover:shadow-blue-900 h-20 md:hover:shadow-blue-900"
               onClick={() => navigate("/Input")}
             >
               {title}

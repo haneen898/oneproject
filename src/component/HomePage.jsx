@@ -9,7 +9,6 @@ import Carddonate from '../component/Card';
 import AboutUS from '../component/AboutUS';
 import DonationMake from '../component/MakeDonation';
 
-
 const HomePage = () => {
   
   return (

@@ -23,14 +23,14 @@ function ContactDetails() {
       
       <div className="relative bg-white rounded-lg shadow-lg p-8 flex flex-wrap max-w-4xl w-full">
         <div className="mt-12 w-full md:w-1/2 p-4">
-          <h2 className="text-blue-600 text-2xl font-bold mb-4">Get in Touch With Us</h2>
-          <p className=" text-gray-600 mb-8">
+          <h2 className="text-blue-800 text-2xl font-bold mb-4">Get in Touch With Us</h2>
+          <p className="italic text-gray-900 mb-8">
             Have questions? Need help? Contact us
             Ready to donate? Let's talk
-            Connect with our team. We're here to answer your questions and guide you through the donation process.
-             Want to learn more? Get in touch to discover how your donation can make a difference.
-             Let's make a difference together. Contact us to learn more about our mission.
-              Reach out and join our community of donors.
+            Connect with our team<br/> We're here to answer your questions and guide you through the donation process
+            <br/> Want to learn more? Get in touch to discover how your donation can make a difference
+             <br/>Let's make a difference together Contact us to learn more about our mission
+              <br/>Reach out and join our community of donors
           </p>
           <div className="flex space-x-4">
             <a href="https://www.linkedin.com/in/haneen-mansoor-905b76245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-red-500">

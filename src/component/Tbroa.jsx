@@ -23,16 +23,18 @@ const TbroaComponent = () => {
         </div>
       </div>
       <div className=" w-full md:w-3/4 flex flex-col items-start justify-center p-4 md:p-6">
-        <p className=" text-xl md:text-2xl mb-4">
-        Be the Heart of Change,,
+        <p className=" text-xl italic md:text-2xl mb-4">
+        Be the Heart of Change
+        <br/>
         Join us in building a stronger community,                  
-         Your donation helps foster compassion,      
-          support,and a sense of belonging for those who need it most.
+         Your donation helps
+         <br/> foster compassion,      
+          support and a sense of belonging for those who need it most
         </p>
-        <h2 className="text-blue-600 text-xl md:text-2xl font-bold mb-4">If you have something to DONATE click here</h2>
+        <h2 className="text-blue-800 text-xl md:text-2xl font-bold mb-4">If you have something to DONATE click here</h2>
         <button 
           className="bg-red-500 text-white px-8 md:px-12 py-2 rounded-full shadow-md hover:bg-red-600 transition-colors"
-         onClick={() => navigate("/Others")} >
+         onClick={() => navigate("/Input")} >
           DONATE NOW
         </button> 
       </div>

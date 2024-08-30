@@ -21,11 +21,11 @@ const SajelComponent = () => {
       </div>
 
       <div className="mt-4 md:mt-0 md:ml-10 md:w-1/2 flex flex-col items-start justify-center p-4 md:p-6 md:text-left md:mr-6">
-        <p className="text-left text-xl md:text-2xl ml-2 md:ml-6 mb-4 md:text-left">
+        <p className="text-left italic text-xl md:text-2xl ml-2 md:ml-6 mb-4 md:text-left">
              Our goal is to create cooperative communities where individuals can work together to improve their lives,
             We support the formation of local associations that focus on identifying and addressing community needs. 
         </p>
-        <h2 className="text-blue-600 text-xl md:text-2xl font-bold ml-2 md:ml-7 mb-4">If you have a DAR click here</h2>
+        <h2 className="text-blue-800 text-xl md:text-2xl font-bold ml-2 md:ml-7 mb-4">If you have a DAR click here</h2>
         <button 
           className="bg-red-500 ml-2 md:ml-7 transition-colors text-white px-8 md:px-12 py-2 rounded-full shadow-md hover:bg-red-600"
            onClick={() => navigate("/SajelDark")} >
