@@ -16,7 +16,6 @@ const HeroCompount = () => {
     />
     <div className="relative flex items-center justify-start h-full p-8">
       <div className="text-star w-full md:w-1/2 md:pl-8">
-        <h2 className="text-3xl font-bold text-blue-900 sm:text-5xl"></h2>
         <h4 className="mt-2 text-4xl font-bold text-blue-900 sm:text-4xl">A brighter future starts here, Join us in creating a world where every child has a full belly and a hopeful heart</h4>
         <p className="mt-4 italic text-2xl font-bold text-gray-800">
         TabaraCOM is dedicated to creating a brighter future
